@@ -17,11 +17,11 @@
 You can run php artisan test
 
 ## Tests List :
-✓ it can get all customers
-✓ it can filter customers by country
-✓ it can filter by valid phones
-✓ it can filter by not valid phones
-✓ it can get all customers in case of empty filters sent
-✓ it can get all customers in case of wrong filter sent
-✓ it can view customers
-✓ it return customers data as json
+- it can get all customers
+- it can filter customers by country
+- it can filter by valid phones
+- it can filter by not valid phones
+- it can get all customers in case of empty filters sent
+- it can get all customers in case of wrong filter sent
+- it can view customers
+- it return customers data as json
