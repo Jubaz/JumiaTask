@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Api\ApiBaseController;
 use App\Services\CustomerService;
 use Illuminate\Http\Request;
 
-class CustomerController extends Controller
+class CustomerController extends ApiBaseController
 {
     private $customerService;
 
@@ -19,6 +19,6 @@ class CustomerController extends Controller
     {
         $customers = $this->customerService->getCustomersWithFilters($request->all());
 
-        return response()->json(['data' => $customers]);
+        return $this->respondWithData($customers);
     }
 }
