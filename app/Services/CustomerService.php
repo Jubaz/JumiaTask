@@ -45,7 +45,7 @@ class CustomerService
         return $customers;
     }
 
-    function applyFilter(FilterContract $filter, Collection $collection, $value)
+    private function applyFilter(FilterContract $filter, Collection $collection, $value)
     {
         return $filter->apply($collection, $value);
     }
