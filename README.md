@@ -1,17 +1,27 @@
 ## Single Page Application For Customers Phones Using Laravel and Vue Js 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## How To Install
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- git clone git@github.com:abdomf/JumiaTask.git 
+- cd JumiaTask
+- composer install
+- cp .env.example .env 
+- configure your database in .env
+- php artisan migrate --seed
+- php artisan key:generate
+- php artisan serve 
+- visit http://localhost:8000/ or http://localhost:8000/customers in your browser.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tests
 
-## Learning Laravel
+You can run php artisan test
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tests List :
+✓ it can get all customers
+✓ it can filter customers by country
+✓ it can filter by valid phones
+✓ it can filter by not valid phones
+✓ it can get all customers in case of empty filters sent
+✓ it can get all customers in case of wrong filter sent
+✓ it can view customers
+✓ it return customers data as json
